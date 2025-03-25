@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6iks5mhmuh4x"]
+
+[ext_resource type="Script" uid="uid://gbmmbpcodw3s" path="res://k.gd" id="1_w2l6j"]
+[ext_resource type="Texture2D" uid="uid://t1ybto3wlg04" path="res://tnt_barrel.png" id="2_k8qms"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(269, 328)
+script = ExtResource("1_w2l6j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(223, 143)
+texture = ExtResource("2_k8qms")

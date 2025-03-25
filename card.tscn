@@ -1,0 +1,74 @@
+[gd_scene load_steps=5 format=3 uid="uid://ce2htlq1wm3v8"]
+
+[ext_resource type="Texture2D" uid="uid://by774qlmoqats" path="res://icon.svg" id="1_kj6r2"]
+[ext_resource type="LabelSettings" uid="uid://hncpicvnsbtl" path="res://new_label_settings.tres" id="2_n3nr6"]
+[ext_resource type="Script" uid="uid://c04i8y45x0gwi" path="res://label_2.gd" id="3_x16fe"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7eyoc"]
+bg_color = Color(0.901031, 0.901031, 0.901031, 1)
+
+[node name="videos" type="PanelContainer"]
+offset_right = 394.0
+offset_bottom = 279.0
+size_flags_horizontal = 2
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_7eyoc")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="thumbnail img" type="TextureRect" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 2
+texture = ExtResource("1_kj6r2")
+
+[node name="HBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 2
+
+[node name="VBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 55
+
+[node name="channelLogo" type="TextureRect" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+texture = ExtResource("1_kj6r2")
+
+[node name="HBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_constants/separation = 16
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "tjuinnb
+"
+label_settings = ExtResource("2_n3nr6")
+script = ExtResource("3_x16fe")
+
+[node name="VBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="title" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "video titles "
+label_settings = ExtResource("2_n3nr6")
+
+[node name="view" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "veiw"
+label_settings = ExtResource("2_n3nr6")
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "week"
+label_settings = ExtResource("2_n3nr6")
